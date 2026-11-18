@@ -1,0 +1,21 @@
+day,time,subject,teacher,room
+Monday,09:00-10:00,Mathematics,Prof. Sharma,A101
+Monday,10:00-11:00,Physics,Prof. Mehta,A102
+Monday,11:00-12:00,English,Prof. Kulkarni,B201
+Monday,14:00-15:00,Computer Networks,Prof. Joshi,Lab1
+Tuesday,09:00-10:00,Data Structures,Prof. Sharma,A101
+Tuesday,10:00-11:00,Mathematics,Prof. Mehta,A102
+Tuesday,11:00-12:00,Computer Networks,Prof. Joshi,Lab1
+Tuesday,14:00-15:00,Physics,Prof. Kulkarni,A103
+Wednesday,09:00-10:00,English,Prof. Kulkarni,B201
+Wednesday,10:00-11:00,Data Structures,Prof. Sharma,A101
+Wednesday,11:00-12:00,Mathematics,Prof. Mehta,A102
+Wednesday,14:00-15:00,Computer Networks,Prof. Joshi,Lab1
+Thursday,09:00-10:00,Physics,Prof. Mehta,A102
+Thursday,10:00-11:00,English,Prof. Kulkarni,B201
+Thursday,11:00-12:00,Data Structures,Prof. Sharma,A101
+Thursday,14:00-15:00,Mathematics,Prof. Joshi,A103
+Friday,09:00-10:00,Computer Networks,Prof. Joshi,Lab1
+Friday,10:00-11:00,Physics,Prof. Mehta,A102
+Friday,11:00-12:00,Data Structures,Prof. Sharma,A101
+Friday,14:00-15:00,English,Prof. Kulkarni,B201

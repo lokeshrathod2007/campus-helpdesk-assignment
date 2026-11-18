@@ -1,0 +1,34 @@
+{
+“name”: “campus-helpdesk”,
+“version”: “1.0.0”,
+“description”: “A campus helpdesk plugin for Nimbus Labs that answers student queries about timetables, fees and hostel rules”,
+“author”: “Lokesh Rathod”,
+“skills”: [
+“skills/timetable-helper”
+],
+“slash_commands”: [
+{
+“name”: “timetable”,
+“description”: “Look up the class timetable for a given day or subject”,
+“usage”: “/timetable <day or subject>“
+}
+],
+“hooks”: [
+{
+“name”: “block-protected-writes”,
+“event”: “file_write”,
+“description”: “Blocks any write operation to the protected-data folder to prevent accidental overwrite of student records”,
+“action”: “block”,
+“target”: “protected-data/*”
+}
+],
+“mcp_servers”: [
+{
+“name”: “campus-data-server”,
+“transport”: “stdio”,
+“command”: “python”,
+“args”: [“mcp-server/server.py”],
+“description”: “Provides live campus data including timetable, fee status and hostel rules”
+}
+]
+}
