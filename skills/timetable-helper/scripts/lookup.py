@@ -1,9 +1,11 @@
 import csv
 import sys
+import os
 
 def lookup_timetable(query_day=None, query_subject=None):
 results = []
-with open(“reference/timetable.csv”, “r”) as f:
+csv_path = os.path.join(os.path.dirname(file), “..”, “reference”, “timetable.csv”)
+with open(csv_path, “r”) as f:
 reader = csv.DictReader(f)
 for row in reader:
 day_match = True
@@ -18,7 +20,7 @@ return results
 
 def main():
 if len(sys.argv) < 2:
-print(“Usage: python lookup.py <day> or python lookup.py <subject>“)
+print(“Usage: python3 lookup.py <day> or python3 lookup.py <subject>“)
 return
 query = sys.argv[1]
 days = [“monday”, “tuesday”, “wednesday”, “thursday”, “friday”]
